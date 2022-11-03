@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Curso HTML5 Y CCS3</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+  <!--hojas de estilos-->
+
+  <enlace rel="preconectar" href="https://fonts.googleapis.com">
+    <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+    <enlace href="https: //fonts.googleapis.com/css2? familia= Oswald:peso@200 &family= Roboto:wght@100 & display=swap" rel="hoja de estilo">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="js/scrollomatic.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script src="js/prefixfree.js"></script> 
+  <script>
+
+    $(document).ready(function(){
+      $("a.scroll").scrollomatic();
+    });
+
+  </script>
+</head>
+<body>
+  <header>
+    <a href="#home" class="scroll">
+      <div id="logo"></div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#home" class="scroll">Home</a></li>
+        <li><a href="#temas" class="scroll">Temas</a></li>
+        <li><a href="#galeria" class="scroll">Galeria</a></li>
+        <li><a href="#contacto" class="scroll">Contáctenos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="contenido"> 
+    <!--El navegador decide si cargar o no el video-->
+    <video autoplay loop preload="auto">
+      <source src="video/video.mp4" type="video/mp4">
+      <source src="video/video.ogv" type="video/ogv">
+      <source src="video/video.webm" type="video/webm">
+      <p> Su navegador no soporta el elemento video</p>
+    </video>
+    <section id="home">
+      <div id="globo"></div>
+      <h2>Bienvenido a una pagina más de Michael<span> 100% html5 & CSS3</span></h2>
+      <p>Esta pagina esta conformada por mucho codigo mas del acostumbrado y aprendiendo dia a dia del desarrollo web</p>
+      <a href="#temas" class="scroll" id="abajo ">Conozca más</a>
+    </section>
+    <section id="temas"class="scroll">
+      <h3>Temas</h3>
+      <article>
+        <div id="imagen1"></div>
+        <h4>Perrito</h4>
+        <p>Textoo simulado, esto es un texto muy simulado</p>
+        <a href="#">Leer Más</a>
+        <div id="imagen2"></div>
+        <h4>Edificaciones</h4>
+        <p>Textoo simulado, esto es un texto muy simulado</p>
+        <a href="#">Leer Más</a>
+        <div id="imagen3"></div>
+        <h4>Gatico</h4>
+        <p>Textoo simulado, esto es un texto muy simulado</p>
+        <a href="#">Leer Más</a>
+      </article>
+    </section>
+    <section id="Galeria">
+      <h3>Galeria</h3>
+      <div id="fotos">
+        <a href="#" title="Imagen1"><img src="img/1.jpg" alt="Imagen1"></a>
+        <a href="#" title="Imagen2"><img src="img/2.jpg" alt="Imagen2"></a>
+        <a href="#" title="Imagen3"><img src="img/3.jpg" alt="Imagen3"></a>
+        <a href="#" title="Imagen4"><img src="img/4.jpg" alt="Imagen4"></a>
+        <a href="#" title="Imagen5"><img src="img/5.jpg" alt="Imagen5"></a>
+        <a href="#" title="Imagen6"><img src="img/6.jpg" alt="Imagen6"></a>
+        <a href="#" title="Imagen7"><img src="img/7.jpg" alt="Imagen7"></a>
+        <a href="#" title="Imagen8"><img src="img/8.jpg" alt="Imagen8"></a>
+      </div>
+    </section>
+    <section id="contacto">
+      <h3>Contactános</h3>
+      <div id="formulario">
+        <form action="" method="post">
+          <input type="text" name="nombre" placeholder="Nombre" required><input type="email" name="email" placeholder="Email" required ><input type="tel" name="telefono" placeholder="Teléfono" pattern="[0-9]{3}\s[0-9]{3}s[0-9]{4}$" title="Debe ser un número con la estructura xxx xxx xxxx teniendo en cuenta los espacios requeridos " required>
+          <textarea name="mensaje"cols="30" rows="10" placeholder="Mensaje" required>
+          </textarea>
+          <input type="submit" value="Enviar datos"></form>
+      </div>
+      <div id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7969.124934053458!2d-75.2861383!3d2.9412394!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1666828939904!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <a href="#contenido" class="arriba scroll"></a>
+    </section>
+    <footer>
+      <p>Copyright &copy; 2022 Michel Andrés Alarcón Pedreros - Todos los derechos reservados</p>
+    </footer>
+  </main>
+
+</body>
+</html>
